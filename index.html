@@ -1,61 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Eldorado Brasil</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Eldorado Brasil</title>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="container">
+  <div class="container">
 
-    <div class="start-screen" id="startScreen">
+    <div id="startScreen">
 
-        <img src="logo.png" class="logo" alt="Logo Eldorado">
+      logo.png" class="logo" alt="Logo Eldorado">
 
- Segurança</h1>
+      <h1>Quiz de Segurança</h1>
 
-        <input
-            type="text"
-            id="playerName"
-            placeholder="Digite seu nome">
+      <input
+        type="text"
+        id="playerName"
+        placeholder="Digite seu nome">
 
-        <button onclick="startQuiz()">
-            Iniciar Quiz
-        </button>
+      <button onclick="startQuiz()">
+        Iniciar Quiz
+      </button>
 
     </div>
 
     <div id="quizScreen" class="hidden">
 
-        <div class="top-bar">
-            <span id="questionNumber"></span>
-            <span id="timer">20</span>
-        </div>
+      <div class="top-bar">
+        <span id="questionNumber"></span>
+        <span id="timer">20</span>
+      </div>
 
-        <h2 id="question"></h2>
+      <h2 id="question"></h2>
 
-        <div id="answers"></div>
+      <div id="answers"></div>
 
     </div>
 
     <div id="resultScreen" class="hidden">
 
-        <h1>Fim do Quiz</h1>
+      <h1>Fim do Quiz</h1>
 
-        <h2 id="finalScore"></h2>
+      <h2 id="finalScore"></h2>
 
-        <button onclick="location.reload()">
-            Reiniciar
-        </button>
+      <button onclick="location.reload()">
+        Reiniciar
+      </button>
 
     </div>
 
-</div>
+  </div>
 
-script.jsscript>
+  script.js
 
 </body>
 </html>
