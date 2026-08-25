@@ -104,7 +104,7 @@ timeLeft--;
 document.getElementById("timer").innerText =
 timeLeft;
 
-if(timeLeft <=0){
+if(timeLeft <= 0){
 
 nextQuestion();
 
@@ -146,14 +146,11 @@ finishQuiz();
 
 function finishQuiz(){
 
-document.getElementById("quizScreen")
-.classList.add("hidden");
+document.getElementById("quizScreen").classList.add("hidden");
 
-document.getElementById("resultScreen")
-.classList.remove("hidden");
+document.getElementById("resultScreen").classList.remove("hidden");
 
-document.getElementById("finalScore")
-.innerText =
+document.getElementById("finalScore").innerText =
 `Pontuação: ${score}`;
 
 }
